@@ -35,7 +35,7 @@ fn calculate_average(numbers: &[f64]) -> f64 {
 // Calculate the sum of all even numbers in a list
 fn sum_even_numbers(numbers: &[i32]) -> i32 {
     // return numbers.iter().filter(|x| **x % 2 == 0).sum(); Boths ways are correct, **, it seems like double dereferencing, similar to nested object in js ??
-    return numbers.iter().filter(|&x| *x % 2 == 0).sum(); // Why we have & in filter =>
+    return numbers.iter().filter(|&x| *x % 2 == 0).sum(); // Why we have & in filter ?
 }
 
 #[cfg(test)]
